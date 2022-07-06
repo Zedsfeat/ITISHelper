@@ -67,6 +67,11 @@ class AuthorizationViewController: UIViewController {
     }
     
     @objc func buttonActionAuthorization(sender: UIButton) {
+        guard let fio = textFieldAuthorization.text else { return }
+        if fio == "Something" {
+            guard let tabBarVC = storyboard?.instantiateViewController(withIdentifier: "TabBarViewController") else { return }
+            self.present(tabBarVC, animated: true, completion: nil) // либо так
+        }
     }
     
 }
