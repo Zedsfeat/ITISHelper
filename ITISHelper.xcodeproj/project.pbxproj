@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F856CB12879486200C50F3F /* StudyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F856CB02879486200C50F3F /* StudyTabViewController.swift */; };
 		436ADBEB2874B7CE00D90062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADBEA2874B7CE00D90062 /* AppDelegate.swift */; };
 		436ADBED2874B7CE00D90062 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */; };
 		436ADBF22874B7CE00D90062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436ADBF02874B7CE00D90062 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F856CB02879486200C50F3F /* StudyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTabViewController.swift; sourceTree = "<group>"; };
 		436ADBE72874B7CE00D90062 /* ITISHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITISHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436ADBEA2874B7CE00D90062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */,
 				436ADBF82874B7CF00D90062 /* Info.plist */,
 				43E2C7F028758E34003FED52 /* TabBarViewController.swift */,
+				2F856CB02879486200C50F3F /* StudyTabViewController.swift */,
 			);
 			path = ITISHelper;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				436ADC072874B91A00D90062 /* HelpViewController.swift in Sources */,
 				436ADC032874B8D700D90062 /* StudyViewController.swift in Sources */,
+				2F856CB12879486200C50F3F /* StudyTabViewController.swift in Sources */,
 				436ADC052874B90500D90062 /* ActivitiesViewController.swift in Sources */,
 				436ADBFF2874B80D00D90062 /* AuthorizationViewController.swift in Sources */,
 				43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */,
