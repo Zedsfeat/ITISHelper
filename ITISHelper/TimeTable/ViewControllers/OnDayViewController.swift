@@ -6,27 +6,37 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var onDayTable: UITableView!
     let onDayID = "OnDayTableViewCell"
     var modelTimeTable = ModelTimeTable()
+    var newView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        modelTimeTable.setUpFriday() // Инициализация пар в пятницу
-        view.backgroundColor = .systemCyan
+    
+        setUpTableView()
         onDayTable.backgroundColor = .white
         onDayTable.separatorStyle = .none
         
         onDayTable.dataSource = self
         onDayTable.delegate = self
         
-        setUpTableView()
+        modelTimeTable.setUpFriday() // Инициализация пар в пятницу
+        
     }
     
+    
     func setUpTableView() {
+        newView = UIView(frame: CGRect(x: 0, y: 440, width: view.frame.width, height: 800))
+        newView.backgroundColor = view.backgroundColor
+        newView.layer.cornerRadius = 25
+        view = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        view.addSubview(newView)
+        newView.addSubview(onDayTable)
+        
+        onDayTable.layer.cornerRadius = 10
         onDayTable.translatesAutoresizingMaskIntoConstraints = false
-        onDayTable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        onDayTable.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        onDayTable.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        onDayTable.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+        onDayTable.leadingAnchor.constraint(equalTo: newView.leadingAnchor, constant: 0).isActive = true
+        onDayTable.trailingAnchor.constraint(equalTo: newView.trailingAnchor, constant: 0).isActive = true
+        onDayTable.topAnchor.constraint(equalTo: newView.topAnchor, constant: 0).isActive = true
+        onDayTable.bottomAnchor.constraint(equalTo: newView.bottomAnchor, constant: 0).isActive = true
         
     }
     
@@ -56,7 +66,7 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
         label.numberOfLines = 0
         label.text = "Пятница"
         label.textColor = .systemCyan
-        label.font = UIFont.boldSystemFont(ofSize: 40)
+        label.font = UIFont.boldSystemFont(ofSize: 30)
         
         returnedView.addSubview(label)
 

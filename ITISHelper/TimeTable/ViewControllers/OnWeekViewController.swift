@@ -22,6 +22,7 @@ class OnWeekViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func setUpTableView() {
+        
         onWeekTable.translatesAutoresizingMaskIntoConstraints = false
         onWeekTable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         onWeekTable.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
@@ -60,7 +61,7 @@ class OnWeekViewController: UIViewController, UITableViewDataSource, UITableView
         label.numberOfLines = 0
         label.text = arrayDaysOfWeek[section]
         label.textColor = .systemCyan
-        label.font = UIFont.boldSystemFont(ofSize: 40)
+        label.font = UIFont.boldSystemFont(ofSize: 30)
         
         returnedView.addSubview(label)
 

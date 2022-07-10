@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432D073A287ACDA900A5C898 /* MySubjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D0739287ACDA900A5C898 /* MySubjectsTableViewCell.swift */; };
+		432D073C287ACE0500A5C898 /* MySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D073B287ACE0500A5C898 /* MySubjects.swift */; };
+		432D073E287ACE2B00A5C898 /* ModelMySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D073D287ACE2B00A5C898 /* ModelMySubjects.swift */; };
+		432D0747287AF4D800A5C898 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D0746287AF4D800A5C898 /* Help.swift */; };
+		432D0749287AF4F300A5C898 /* ModelHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D0748287AF4F300A5C898 /* ModelHelp.swift */; };
+		432D074B287AF58700A5C898 /* MyGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D074A287AF58700A5C898 /* MyGroupViewController.swift */; };
+		432D074D287AF59700A5C898 /* LeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D074C287AF59700A5C898 /* LeadersViewController.swift */; };
+		432D0755287AFA1500A5C898 /* MyGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D0754287AFA1500A5C898 /* MyGroupTableViewCell.swift */; };
+		432D0758287AFA3300A5C898 /* LeadersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D0757287AFA3300A5C898 /* LeadersTableViewCell.swift */; };
+		432D075D287B2BED00A5C898 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D075C287B2BED00A5C898 /* RatingViewController.swift */; };
+		432D075F287B2E6E00A5C898 /* ItisRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D075E287B2E6E00A5C898 /* ItisRequestViewController.swift */; };
+		432D076B287B35ED00A5C898 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D076A287B35ED00A5C898 /* RatingTableViewCell.swift */; };
+		432D076D287B3BB300A5C898 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D076C287B3BB300A5C898 /* Rating.swift */; };
+		432D076F287B3BD100A5C898 /* ModelRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D076E287B3BD100A5C898 /* ModelRating.swift */; };
 		436ADBEB2874B7CE00D90062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADBEA2874B7CE00D90062 /* AppDelegate.swift */; };
 		436ADBED2874B7CE00D90062 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */; };
 		436ADBF22874B7CE00D90062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436ADBF02874B7CE00D90062 /* Main.storyboard */; };
@@ -29,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		432D0739287ACDA900A5C898 /* MySubjectsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjectsTableViewCell.swift; sourceTree = "<group>"; };
+		432D073B287ACE0500A5C898 /* MySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjects.swift; sourceTree = "<group>"; };
+		432D073D287ACE2B00A5C898 /* ModelMySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMySubjects.swift; sourceTree = "<group>"; };
+		432D0746287AF4D800A5C898 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		432D0748287AF4F300A5C898 /* ModelHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelp.swift; sourceTree = "<group>"; };
+		432D074A287AF58700A5C898 /* MyGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupViewController.swift; sourceTree = "<group>"; };
+		432D074C287AF59700A5C898 /* LeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersViewController.swift; sourceTree = "<group>"; };
+		432D0754287AFA1500A5C898 /* MyGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupTableViewCell.swift; sourceTree = "<group>"; };
+		432D0757287AFA3300A5C898 /* LeadersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersTableViewCell.swift; sourceTree = "<group>"; };
+		432D075C287B2BED00A5C898 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		432D075E287B2E6E00A5C898 /* ItisRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItisRequestViewController.swift; sourceTree = "<group>"; };
+		432D076A287B35ED00A5C898 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		432D076C287B3BB300A5C898 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		432D076E287B3BD100A5C898 /* ModelRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRating.swift; sourceTree = "<group>"; };
 		436ADBE72874B7CE00D90062 /* ITISHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITISHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436ADBEA2874B7CE00D90062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +91,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432D0735287ACD4800A5C898 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC022874B8D700D90062 /* StudyViewController.swift */,
+				438EE49C2878C79000F5C178 /* MySubjectsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		432D0737287ACD6E00A5C898 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				432D0739287ACDA900A5C898 /* MySubjectsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		432D0738287ACD8900A5C898 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				432D073B287ACE0500A5C898 /* MySubjects.swift */,
+				432D073D287ACE2B00A5C898 /* ModelMySubjects.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		432D073F287AF45F00A5C898 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC062874B91A00D90062 /* HelpViewController.swift */,
+				432D074A287AF58700A5C898 /* MyGroupViewController.swift */,
+				432D074C287AF59700A5C898 /* LeadersViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		432D0740287AF48400A5C898 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				432D0754287AFA1500A5C898 /* MyGroupTableViewCell.swift */,
+				432D0757287AFA3300A5C898 /* LeadersTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		432D0741287AF49400A5C898 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				432D0746287AF4D800A5C898 /* Help.swift */,
+				432D0748287AF4F300A5C898 /* ModelHelp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		432D0759287B280C00A5C898 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC042874B90500D90062 /* ActivitiesViewController.swift */,
+				432D075C287B2BED00A5C898 /* RatingViewController.swift */,
+				432D075E287B2E6E00A5C898 /* ItisRequestViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		432D075A287B281F00A5C898 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				432D076A287B35ED00A5C898 /* RatingTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		432D075B287B2B9B00A5C898 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				432D076C287B3BB300A5C898 /* Rating.swift */,
+				432D076E287B3BD100A5C898 /* ModelRating.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		436ADBDE2874B7CE00D90062 = {
 			isa = PBXGroup;
 			children = (
@@ -128,8 +237,9 @@
 		438EE4A4287A1FA400F5C178 /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				438EE49C2878C79000F5C178 /* MySubjectsViewController.swift */,
-				436ADC022874B8D700D90062 /* StudyViewController.swift */,
+				432D0735287ACD4800A5C898 /* ViewControllers */,
+				432D0737287ACD6E00A5C898 /* Cells */,
+				432D0738287ACD8900A5C898 /* Sources */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -137,7 +247,9 @@
 		438EE4A5287A1FBA00F5C178 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				436ADC042874B90500D90062 /* ActivitiesViewController.swift */,
+				432D0759287B280C00A5C898 /* ViewControllers */,
+				432D075A287B281F00A5C898 /* Cells */,
+				432D075B287B2B9B00A5C898 /* Sources */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -145,7 +257,9 @@
 		438EE4A6287A1FD100F5C178 /* Help */ = {
 			isa = PBXGroup;
 			children = (
-				436ADC062874B91A00D90062 /* HelpViewController.swift */,
+				432D073F287AF45F00A5C898 /* ViewControllers */,
+				432D0740287AF48400A5C898 /* Cells */,
+				432D0741287AF49400A5C898 /* Sources */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -265,20 +379,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432D073E287ACE2B00A5C898 /* ModelMySubjects.swift in Sources */,
+				432D076B287B35ED00A5C898 /* RatingTableViewCell.swift in Sources */,
 				436ADC072874B91A00D90062 /* HelpViewController.swift in Sources */,
+				432D075F287B2E6E00A5C898 /* ItisRequestViewController.swift in Sources */,
 				438EE4B1287A2F9100F5C178 /* ModelTimeTable.swift in Sources */,
+				432D0755287AFA1500A5C898 /* MyGroupTableViewCell.swift in Sources */,
 				436ADC032874B8D700D90062 /* StudyViewController.swift in Sources */,
 				436ADC052874B90500D90062 /* ActivitiesViewController.swift in Sources */,
+				432D076F287B3BD100A5C898 /* ModelRating.swift in Sources */,
+				432D073C287ACE0500A5C898 /* MySubjects.swift in Sources */,
 				436ADBFF2874B80D00D90062 /* AuthorizationViewController.swift in Sources */,
 				438EE49F287A181600F5C178 /* OnDayTableViewCell.swift in Sources */,
+				432D0749287AF4F300A5C898 /* ModelHelp.swift in Sources */,
+				432D076D287B3BB300A5C898 /* Rating.swift in Sources */,
 				439C5E2128777CD700E9A8CD /* OnDayViewController.swift in Sources */,
 				439C5E1D287726D000E9A8CD /* WrongViewController.swift in Sources */,
 				43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */,
+				432D074B287AF58700A5C898 /* MyGroupViewController.swift in Sources */,
 				438EE49D2878C79000F5C178 /* MySubjectsViewController.swift in Sources */,
 				436ADBEB2874B7CE00D90062 /* AppDelegate.swift in Sources */,
 				436ADC012874B83D00D90062 /* TimeTableViewController.swift in Sources */,
+				432D075D287B2BED00A5C898 /* RatingViewController.swift in Sources */,
+				432D0747287AF4D800A5C898 /* Help.swift in Sources */,
+				432D073A287ACDA900A5C898 /* MySubjectsTableViewCell.swift in Sources */,
 				439C5E2328777D4000E9A8CD /* OnWeekViewController.swift in Sources */,
 				436ADBED2874B7CE00D90062 /* SceneDelegate.swift in Sources */,
+				432D074D287AF59700A5C898 /* LeadersViewController.swift in Sources */,
+				432D0758287AFA3300A5C898 /* LeadersTableViewCell.swift in Sources */,
 				438EE4B3287A2FB800F5C178 /* TimeTable.swift in Sources */,
 				436ADC092874B93900D90062 /* SettingsViewController.swift in Sources */,
 			);
@@ -431,6 +559,7 @@
 				DEVELOPMENT_TEAM = 72SVK4HY2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ITISHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Helper;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -462,6 +591,7 @@
 				DEVELOPMENT_TEAM = 72SVK4HY2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ITISHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Helper;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

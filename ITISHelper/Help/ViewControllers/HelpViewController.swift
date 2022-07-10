@@ -34,7 +34,7 @@ class HelpViewController: UIViewController {
         buttonMyGroupmates.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
         buttonMyGroupmates.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
-        
+        buttonMyGroupmates.addTarget(self, action: #selector(buttonActionMyGroupmates), for: .touchUpInside)
     }
     
     func setUpButtonLeader() {
@@ -56,5 +56,17 @@ class HelpViewController: UIViewController {
         buttonLeaders.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
         buttonLeaders.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
         buttonLeaders.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        buttonLeaders.addTarget(self, action: #selector(buttonActionLeaders), for: .touchUpInside)
+    }
+    
+    @objc func buttonActionMyGroupmates() {
+        guard let myGroupVC = storyboard?.instantiateViewController(withIdentifier: "MyGroupViewController") else { return }
+        present(myGroupVC, animated: true, completion: nil)
+    }
+    
+    @objc func buttonActionLeaders() {
+        guard let leadersVC = storyboard?.instantiateViewController(withIdentifier: "LeadersViewController") else { return }
+        present(leadersVC, animated: true, completion: nil)
     }
 }
