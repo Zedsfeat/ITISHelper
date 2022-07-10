@@ -18,6 +18,13 @@
 		436ADC052874B90500D90062 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADC042874B90500D90062 /* ActivitiesViewController.swift */; };
 		436ADC072874B91A00D90062 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADC062874B91A00D90062 /* HelpViewController.swift */; };
 		436ADC092874B93900D90062 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADC082874B93900D90062 /* SettingsViewController.swift */; };
+		438EE49D2878C79000F5C178 /* MySubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EE49C2878C79000F5C178 /* MySubjectsViewController.swift */; };
+		438EE49F287A181600F5C178 /* OnDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EE49E287A181600F5C178 /* OnDayTableViewCell.swift */; };
+		438EE4B1287A2F9100F5C178 /* ModelTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EE4B0287A2F9100F5C178 /* ModelTimeTable.swift */; };
+		438EE4B3287A2FB800F5C178 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EE4B2287A2FB800F5C178 /* TimeTable.swift */; };
+		439C5E1D287726D000E9A8CD /* WrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E1C287726D000E9A8CD /* WrongViewController.swift */; };
+		439C5E2128777CD700E9A8CD /* OnDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E2028777CD700E9A8CD /* OnDayViewController.swift */; };
+		439C5E2328777D4000E9A8CD /* OnWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */; };
 		43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2C7F028758E34003FED52 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +42,13 @@
 		436ADC042874B90500D90062 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		436ADC062874B91A00D90062 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		436ADC082874B93900D90062 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		438EE49C2878C79000F5C178 /* MySubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjectsViewController.swift; sourceTree = "<group>"; };
+		438EE49E287A181600F5C178 /* OnDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDayTableViewCell.swift; sourceTree = "<group>"; };
+		438EE4B0287A2F9100F5C178 /* ModelTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTimeTable.swift; sourceTree = "<group>"; };
+		438EE4B2287A2FB800F5C178 /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		439C5E1C287726D000E9A8CD /* WrongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongViewController.swift; sourceTree = "<group>"; };
+		439C5E2028777CD700E9A8CD /* OnDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDayViewController.swift; sourceTree = "<group>"; };
+		439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnWeekViewController.swift; sourceTree = "<group>"; };
 		43E2C7F028758E34003FED52 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,21 +82,116 @@
 		436ADBE92874B7CE00D90062 /* ITISHelper */ = {
 			isa = PBXGroup;
 			children = (
-				436ADBFE2874B80D00D90062 /* AuthorizationViewController.swift */,
-				436ADC002874B83D00D90062 /* TimeTableViewController.swift */,
-				436ADC022874B8D700D90062 /* StudyViewController.swift */,
-				436ADC042874B90500D90062 /* ActivitiesViewController.swift */,
-				436ADC062874B91A00D90062 /* HelpViewController.swift */,
-				436ADC082874B93900D90062 /* SettingsViewController.swift */,
 				436ADBF02874B7CE00D90062 /* Main.storyboard */,
 				436ADBF32874B7CF00D90062 /* Assets.xcassets */,
-				436ADBF52874B7CF00D90062 /* LaunchScreen.storyboard */,
+				43E2C7F028758E34003FED52 /* TabBarViewController.swift */,
+				438EE4A2287A1F6F00F5C178 /* Authorization */,
+				438EE4A3287A1F8500F5C178 /* TimeTable */,
+				438EE4A4287A1FA400F5C178 /* Study */,
+				438EE4A5287A1FBA00F5C178 /* Activities */,
+				438EE4A6287A1FD100F5C178 /* Help */,
+				438EE4A7287A1FE000F5C178 /* Settings */,
+				438EE4A1287A1F5300F5C178 /* Sources */,
 				436ADBEA2874B7CE00D90062 /* AppDelegate.swift */,
 				436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */,
 				436ADBF82874B7CF00D90062 /* Info.plist */,
-				43E2C7F028758E34003FED52 /* TabBarViewController.swift */,
+				436ADBF52874B7CF00D90062 /* LaunchScreen.storyboard */,
 			);
 			path = ITISHelper;
+			sourceTree = "<group>";
+		};
+		438EE4A1287A1F5300F5C178 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		438EE4A2287A1F6F00F5C178 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				438EE4A8287A211900F5C178 /* ViewControllers */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		438EE4A3287A1F8500F5C178 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				438EE4A9287A212E00F5C178 /* ViewControllers */,
+				438EE4AA287A214000F5C178 /* Cells */,
+				438EE4AB287A216E00F5C178 /* Sources */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		438EE4A4287A1FA400F5C178 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				438EE49C2878C79000F5C178 /* MySubjectsViewController.swift */,
+				436ADC022874B8D700D90062 /* StudyViewController.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		438EE4A5287A1FBA00F5C178 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC042874B90500D90062 /* ActivitiesViewController.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		438EE4A6287A1FD100F5C178 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC062874B91A00D90062 /* HelpViewController.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		438EE4A7287A1FE000F5C178 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC082874B93900D90062 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		438EE4A8287A211900F5C178 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				436ADBFE2874B80D00D90062 /* AuthorizationViewController.swift */,
+				439C5E1C287726D000E9A8CD /* WrongViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		438EE4A9287A212E00F5C178 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				436ADC002874B83D00D90062 /* TimeTableViewController.swift */,
+				439C5E2028777CD700E9A8CD /* OnDayViewController.swift */,
+				439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		438EE4AA287A214000F5C178 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				438EE49E287A181600F5C178 /* OnDayTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		438EE4AB287A216E00F5C178 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				438EE4B2287A2FB800F5C178 /* TimeTable.swift */,
+				438EE4B0287A2F9100F5C178 /* ModelTimeTable.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,13 +266,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				436ADC072874B91A00D90062 /* HelpViewController.swift in Sources */,
+				438EE4B1287A2F9100F5C178 /* ModelTimeTable.swift in Sources */,
 				436ADC032874B8D700D90062 /* StudyViewController.swift in Sources */,
 				436ADC052874B90500D90062 /* ActivitiesViewController.swift in Sources */,
 				436ADBFF2874B80D00D90062 /* AuthorizationViewController.swift in Sources */,
+				438EE49F287A181600F5C178 /* OnDayTableViewCell.swift in Sources */,
+				439C5E2128777CD700E9A8CD /* OnDayViewController.swift in Sources */,
+				439C5E1D287726D000E9A8CD /* WrongViewController.swift in Sources */,
 				43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */,
+				438EE49D2878C79000F5C178 /* MySubjectsViewController.swift in Sources */,
 				436ADBEB2874B7CE00D90062 /* AppDelegate.swift in Sources */,
 				436ADC012874B83D00D90062 /* TimeTableViewController.swift in Sources */,
+				439C5E2328777D4000E9A8CD /* OnWeekViewController.swift in Sources */,
 				436ADBED2874B7CE00D90062 /* SceneDelegate.swift in Sources */,
+				438EE4B3287A2FB800F5C178 /* TimeTable.swift in Sources */,
 				436ADC092874B93900D90062 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +425,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72SVK4HY2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ITISHelper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,7 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +444,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zedsfeat.ITISHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,8 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72SVK4HY2X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ITISHelper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,7 +467,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,6 +475,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zedsfeat.ITISHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
