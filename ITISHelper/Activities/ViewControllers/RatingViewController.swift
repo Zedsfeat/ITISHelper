@@ -12,7 +12,8 @@ class RatingViewController: UIViewController, UITableViewDataSource, UITableView
 
         setUpTableView()
         ratingTableView.backgroundColor = .white
-        ratingTableView.separatorStyle = .none
+        ratingTableView.separatorStyle = .singleLine
+        ratingTableView.separatorColor = .darkGray
 
         ratingTableView.dataSource = self
         ratingTableView.delegate = self
@@ -23,14 +24,14 @@ class RatingViewController: UIViewController, UITableViewDataSource, UITableView
 
 
     func setUpTableView() {
-        newView = UIView(frame: CGRect(x: 0, y: 355, width: view.frame.width, height: 800))
+        newView = UIView(frame: CGRect(x: 0, y: 290, width: view.frame.width, height: 800))
         newView.backgroundColor = view.backgroundColor
-        newView.layer.cornerRadius = 25
+        newView.layer.cornerRadius = 50
         view = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         view.addSubview(newView)
         newView.addSubview(ratingTableView)
         
-        ratingTableView.layer.cornerRadius = 10
+        ratingTableView.layer.cornerRadius = 50
         ratingTableView.translatesAutoresizingMaskIntoConstraints = false
         ratingTableView.leadingAnchor.constraint(equalTo: newView.leadingAnchor, constant: 0).isActive = true
         ratingTableView.trailingAnchor.constraint(equalTo: newView.trailingAnchor, constant: 0).isActive = true
@@ -40,7 +41,7 @@ class RatingViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        34
+        40
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,7 +56,7 @@ class RatingViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ratingID) as! RatingTableViewCell
 
-        cell.backgroundColor = .systemCyan
+        cell.backgroundColor = .tertiaryLabel
 
         let someRating = modelRating.arrayOfRating[indexPath.row]
 
@@ -63,9 +64,9 @@ class RatingViewController: UIViewController, UITableViewDataSource, UITableView
         cell.studentFIO.text = someRating.studentFIO
         cell.points.text = someRating.points
         
-        cell.number.textColor = .white
-        cell.studentFIO.textColor = .white
-        cell.points.textColor = .white
+        cell.number.textColor = .darkGray
+        cell.studentFIO.textColor = .darkGray
+        cell.points.textColor = .darkGray
         
         return cell
     }

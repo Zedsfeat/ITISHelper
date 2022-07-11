@@ -11,7 +11,8 @@ class MyGroupViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         setUpTableView()
         myGroupTableView.backgroundColor = .white
-        myGroupTableView.separatorStyle = .none
+        myGroupTableView.separatorStyle = .singleLine
+        myGroupTableView.separatorColor = .darkGray
 
         myGroupTableView.dataSource = self
         myGroupTableView.delegate = self
@@ -56,7 +57,7 @@ class MyGroupViewController: UIViewController, UITableViewDelegate, UITableViewD
         label.textAlignment = .center
         label.numberOfLines = 0
         label.text = "11-104"
-        label.textColor = .systemCyan
+        label.textColor = .gray
         label.font = UIFont.boldSystemFont(ofSize: 30)
 
         returnedView.addSubview(label)
@@ -67,15 +68,15 @@ class MyGroupViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: myGroupID) as! MyGroupTableViewCell
 
-        cell.backgroundColor = .systemCyan
+        cell.backgroundColor = .tertiaryLabel
 
         let someGroupmate = modelMyGroup.arrayOfMyGroupmates[indexPath.row]
 
         cell.labelStudenFIO.text = someGroupmate.studentFIO
         cell.number.text = someGroupmate.number
         
-        cell.labelStudenFIO.textColor = .white
-        cell.number.textColor = .white
+        cell.labelStudenFIO.textColor = .darkGray
+        cell.number.textColor = .darkGray
         
         
         

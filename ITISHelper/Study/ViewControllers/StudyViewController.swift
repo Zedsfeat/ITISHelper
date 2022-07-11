@@ -7,7 +7,7 @@ class StudyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         
         setUpButtonMySubjects()
         
@@ -17,12 +17,12 @@ class StudyViewController: UIViewController {
         view.addSubview(buttonMySubjects)
         
         buttonMySubjects.setTitle("МОИ ПРЕДМЕТЫ", for: .normal)
-        buttonMySubjects.setTitleColor(.gray, for: .normal)
-        buttonMySubjects.setTitleColor(.systemCyan, for: .highlighted)
+        buttonMySubjects.setTitleColor(.systemGray, for: .normal)
+        buttonMySubjects.setTitleColor(.darkGray, for: .highlighted)
         
         buttonMySubjects.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonMySubjects.layer.borderColor = UIColor.gray.cgColor
+        buttonMySubjects.layer.borderColor = UIColor.systemGray.cgColor
         buttonMySubjects.layer.backgroundColor = UIColor.white.cgColor
         buttonMySubjects.layer.borderWidth = 2
         buttonMySubjects.layer.cornerRadius = 25

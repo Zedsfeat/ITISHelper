@@ -12,7 +12,8 @@ class LeadersViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         
         leaderTableView.backgroundColor = .white
-        leaderTableView.separatorStyle = .none
+        leaderTableView.separatorStyle = .singleLine
+        leaderTableView.separatorColor = .darkGray
         leaderTableView.dataSource = self
         leaderTableView.delegate = self
 
@@ -23,14 +24,14 @@ class LeadersViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 
     func setUpTableView() {
-        newView = UIView(frame: CGRect(x: 0, y: 225, width: view.frame.width, height: 800))
+        newView = UIView(frame: CGRect(x: 0, y: 245, width: view.frame.width, height: 800))
         newView.backgroundColor = view.backgroundColor
-        newView.layer.cornerRadius = 25
+        newView.layer.cornerRadius = 50
         view = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         view.addSubview(newView)
         newView.addSubview(leaderTableView)
         
-        leaderTableView.layer.cornerRadius = 10
+        leaderTableView.layer.cornerRadius = 50
         leaderTableView.translatesAutoresizingMaskIntoConstraints = false
         leaderTableView.leadingAnchor.constraint(equalTo: newView.leadingAnchor, constant: 0).isActive = true
         leaderTableView.trailingAnchor.constraint(equalTo: newView.trailingAnchor, constant: 0).isActive = true
@@ -43,47 +44,23 @@ class LeadersViewController: UIViewController, UITableViewDelegate, UITableViewD
         40
     }
 
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return modelLeaders.arrayOfLeaders.count
     }
 
-
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        50
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let returnedView = UIView()
-
-
-        let label = UILabel(frame: CGRect(x: 46, y: 0, width: 280, height: 50))
-
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.text = "11-104"
-        label.textColor = .systemCyan
-        label.font = UIFont.boldSystemFont(ofSize: 30)
-
-        returnedView.addSubview(label)
-
-        return returnedView
-    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: leadersID) as! LeadersTableViewCell
 
-        cell.backgroundColor = .systemCyan
+        cell.backgroundColor = .tertiaryLabel
 
         let someLeader = modelLeaders.arrayOfLeaders[indexPath.row]
 
         cell.labelLeader.text = someLeader.leader
         cell.numerOfGroup.text = someLeader.numberOfGroup
         
-        cell.labelLeader.textColor = .white
-        cell.numerOfGroup.textColor = .white
+        cell.labelLeader.textColor = .darkGray
+        cell.numerOfGroup.textColor = .darkGray
         
         return cell
     }

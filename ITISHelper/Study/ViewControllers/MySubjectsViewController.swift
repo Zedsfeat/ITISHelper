@@ -21,23 +21,26 @@ class MySubjectsViewController: UIViewController, UITableViewDataSource, UITable
         view.backgroundColor = .systemCyan
         
         tableViewOfMySubjects.backgroundColor = .white
-        tableViewOfMySubjects.separatorStyle = .none
+        tableViewOfMySubjects.separatorStyle = .singleLine
+        tableViewOfMySubjects.separatorColor = .darkGray
         tableViewOfMySubjects.dataSource = self
         tableViewOfMySubjects.delegate = self
+        
         
         setUpTableView()
         modelMySubjects.setUpSubjects()
     }
     
     func setUpTableView() {
-        newView = UIView(frame: CGRect(x: 0, y: 415, width: view.frame.width, height: 800))
+        newView = UIView(frame: CGRect(x: 0, y: 465, width: view.frame.width, height: 800))
         newView.backgroundColor = view.backgroundColor
-        newView.layer.cornerRadius = 25
+        newView.layer.cornerRadius = 50
         view = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         view.addSubview(newView)
         newView.addSubview(tableViewOfMySubjects)
         
-        tableViewOfMySubjects.layer.cornerRadius = 10
+        tableViewOfMySubjects.layer.cornerRadius = 50
+        
         tableViewOfMySubjects.translatesAutoresizingMaskIntoConstraints = false
         tableViewOfMySubjects.leadingAnchor.constraint(equalTo: newView.leadingAnchor, constant: 0).isActive = true
         tableViewOfMySubjects.trailingAnchor.constraint(equalTo: newView.trailingAnchor, constant: 0).isActive = true
@@ -47,7 +50,7 @@ class MySubjectsViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        70
+        60
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,17 +60,18 @@ class MySubjectsViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: mySubjectsID) as! MySubjectsTableViewCell
         
-        cell.backgroundColor = .systemCyan
+        cell.backgroundColor = .tertiaryLabel
         
         let someSubject = modelMySubjects.arrayOfSubjects[indexPath.row]
         
         cell.labelName.text = someSubject.name
-        cell.labelName.textColor = .white
+        cell.labelName.textColor = .darkGray
         cell.labelName.font = UIFont.boldSystemFont(ofSize: 27)
         
         
         return cell
     }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let subject = modelMySubjects.arrayOfSubjects

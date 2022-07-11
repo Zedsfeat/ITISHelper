@@ -2,30 +2,28 @@ import UIKit
 
 class TimeTableViewController: UIViewController {
     
-    var titleTimeTable: UIButton!
     var buttonOnDay: UIButton!
     var buttonOnWeek: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBarController?.selectedIndex = 2
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         
         setUpOnWeek()
         setUpOnDay()
     }
+    
     func setUpOnDay() {
         buttonOnDay = UIButton()
         view.addSubview(buttonOnDay)
         
-        buttonOnDay.setTitle("НА ДЕНЬ", for: .normal)
-        buttonOnDay.setTitleColor(.gray, for: .normal)
-        buttonOnDay.setTitleColor(.systemCyan, for: .highlighted)
+        buttonOnDay.setTitle("НА СЕГОДНЯ", for: .normal)
+        buttonOnDay.setTitleColor(.systemGray, for: .normal)
+        buttonOnDay.setTitleColor(.darkGray, for: .highlighted)
         buttonOnDay.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonOnDay.layer.borderColor = UIColor.gray.cgColor
+        buttonOnDay.layer.borderColor = UIColor.systemGray.cgColor
         buttonOnDay.layer.backgroundColor = UIColor.white.cgColor
         buttonOnDay.layer.borderWidth = 2
         buttonOnDay.layer.cornerRadius = 25
@@ -44,11 +42,11 @@ class TimeTableViewController: UIViewController {
         view.addSubview(buttonOnWeek)
         
         buttonOnWeek.setTitle("НА НЕДЕЛЮ", for: .normal)
-        buttonOnWeek.setTitleColor(.gray, for: .normal)
-        buttonOnWeek.setTitleColor(.systemCyan, for: .highlighted)
+        buttonOnWeek.setTitleColor(.systemGray, for: .normal)
+        buttonOnWeek.setTitleColor(.darkGray, for: .highlighted)
         buttonOnWeek.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonOnWeek.layer.borderColor = UIColor.gray.cgColor
+        buttonOnWeek.layer.borderColor = UIColor.systemGray.cgColor
         buttonOnWeek.layer.backgroundColor = UIColor.white.cgColor
         buttonOnWeek.layer.borderWidth = 2
         buttonOnWeek.layer.cornerRadius = 25

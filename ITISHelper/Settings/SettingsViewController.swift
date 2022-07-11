@@ -8,7 +8,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .gray
         setUpButtonSettings()
     }
     
@@ -17,11 +17,11 @@ class SettingsViewController: UIViewController {
         view.addSubview(buttonSettings)
         
         buttonSettings.setTitle("СМЕНИТЬ ПРОФИЛЬ", for: .normal)
-        buttonSettings.setTitleColor(.gray, for: .normal)
-        buttonSettings.setTitleColor(.systemCyan, for: .highlighted)
+        buttonSettings.setTitleColor(.systemGray, for: .normal)
+        buttonSettings.setTitleColor(.darkGray, for: .highlighted)
         buttonSettings.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonSettings.layer.borderColor = UIColor.gray.cgColor
+        buttonSettings.layer.borderColor = UIColor.systemGray.cgColor
         buttonSettings.layer.backgroundColor = UIColor.white.cgColor
         buttonSettings.layer.borderWidth = 2
         buttonSettings.layer.cornerRadius = 25

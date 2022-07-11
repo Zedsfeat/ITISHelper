@@ -8,7 +8,7 @@ class ActivitiesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
     
         setUpRating()
         setUpItisRequest()
@@ -19,11 +19,11 @@ class ActivitiesViewController: UIViewController {
         view.addSubview(buttonItisRequest)
         
         buttonItisRequest.setTitle("ITIS REQUEST", for: .normal)
-        buttonItisRequest.setTitleColor(.gray, for: .normal)
-        buttonItisRequest.setTitleColor(.systemCyan, for: .highlighted)
+        buttonItisRequest.setTitleColor(.systemGray, for: .normal)
+        buttonItisRequest.setTitleColor(.darkGray, for: .highlighted)
         buttonItisRequest.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonItisRequest.layer.borderColor = UIColor.gray.cgColor
+        buttonItisRequest.layer.borderColor = UIColor.systemGray.cgColor
         buttonItisRequest.layer.backgroundColor = UIColor.white.cgColor
         buttonItisRequest.layer.borderWidth = 2
         buttonItisRequest.layer.cornerRadius = 25
@@ -42,11 +42,11 @@ class ActivitiesViewController: UIViewController {
         view.addSubview(buttonRating)
         
         buttonRating.setTitle("РЕЙТИНГ", for: .normal)
-        buttonRating.setTitleColor(.gray, for: .normal)
-        buttonRating.setTitleColor(.systemCyan, for: .highlighted)
+        buttonRating.setTitleColor(.systemGray, for: .normal)
+        buttonRating.setTitleColor(.darkGray, for: .highlighted)
         buttonRating.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonRating.layer.borderColor = UIColor.gray.cgColor
+        buttonRating.layer.borderColor = UIColor.systemGray.cgColor
         buttonRating.layer.backgroundColor = UIColor.white.cgColor
         buttonRating.layer.borderWidth = 2
         buttonRating.layer.cornerRadius = 25

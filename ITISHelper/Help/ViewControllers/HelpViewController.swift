@@ -8,7 +8,7 @@ class HelpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         
         setUpButtonLeader()
         setUpButtonMyGroupmates()
@@ -19,11 +19,11 @@ class HelpViewController: UIViewController {
         view.addSubview(buttonMyGroupmates)
         
         buttonMyGroupmates.setTitle("CПИСОК МОЕЙ ГРУППЫ", for: .normal)
-        buttonMyGroupmates.setTitleColor(.gray, for: .normal)
-        buttonMyGroupmates.setTitleColor(.systemCyan, for: .highlighted)
+        buttonMyGroupmates.setTitleColor(.systemGray, for: .normal)
+        buttonMyGroupmates.setTitleColor(.darkGray, for: .highlighted)
         buttonMyGroupmates.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonMyGroupmates.layer.borderColor = UIColor.gray.cgColor
+        buttonMyGroupmates.layer.borderColor = UIColor.systemGray.cgColor
         buttonMyGroupmates.layer.backgroundColor = UIColor.white.cgColor
         buttonMyGroupmates.layer.borderWidth = 2
         buttonMyGroupmates.layer.cornerRadius = 25
@@ -42,11 +42,11 @@ class HelpViewController: UIViewController {
         view.addSubview(buttonLeaders)
         
         buttonLeaders.setTitle("СПИСОК СТАРОСТ", for: .normal)
-        buttonLeaders.setTitleColor(.gray, for: .normal)
-        buttonLeaders.setTitleColor(.systemCyan, for: .highlighted)
+        buttonLeaders.setTitleColor(.systemGray, for: .normal)
+        buttonLeaders.setTitleColor(.darkGray, for: .highlighted)
         buttonLeaders.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         
-        buttonLeaders.layer.borderColor = UIColor.gray.cgColor
+        buttonLeaders.layer.borderColor = UIColor.systemGray.cgColor
         buttonLeaders.layer.backgroundColor = UIColor.white.cgColor
         buttonLeaders.layer.borderWidth = 2
         buttonLeaders.layer.cornerRadius = 25

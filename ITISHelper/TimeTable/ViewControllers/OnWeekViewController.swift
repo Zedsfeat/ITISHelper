@@ -13,7 +13,8 @@ class OnWeekViewController: UIViewController, UITableViewDataSource, UITableView
         modelTimeTable.setUpWeek() // Инициализация расписания
         view.backgroundColor = .systemCyan
         onWeekTable.backgroundColor = .white
-        onWeekTable.separatorStyle = .none
+        onWeekTable.separatorStyle = .singleLine
+        onWeekTable.separatorColor = .darkGray
         
         onWeekTable.dataSource = self
         onWeekTable.delegate = self
@@ -60,7 +61,7 @@ class OnWeekViewController: UIViewController, UITableViewDataSource, UITableView
         label.textAlignment = .center
         label.numberOfLines = 0
         label.text = arrayDaysOfWeek[section]
-        label.textColor = .systemCyan
+        label.textColor = .gray
         label.font = UIFont.boldSystemFont(ofSize: 30)
         
         returnedView.addSubview(label)
@@ -71,7 +72,7 @@ class OnWeekViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: onDayID) as! OnDayTableViewCell
         
-        cell.backgroundColor = .systemCyan
+        cell.backgroundColor = .tertiaryLabel
         
         let section = modelTimeTable.arrayOfPairsPerWeek[indexPath.section]
         let someDay = section[indexPath.row]
@@ -81,10 +82,10 @@ class OnWeekViewController: UIViewController, UITableViewDataSource, UITableView
         cell.labelSubject.text = someDay.subject
         cell.labelTeacher.text = someDay.teacher
         
-        cell.labelTime.textColor = .white
-        cell.labelRoom.textColor = .white
-        cell.labelSubject.textColor = .white
-        cell.labelTeacher.textColor = .white
+        cell.labelTime.textColor = .darkGray
+        cell.labelRoom.textColor = .darkGray
+        cell.labelSubject.textColor = .darkGray
+        cell.labelTeacher.textColor = .darkGray
         
         return cell
     }

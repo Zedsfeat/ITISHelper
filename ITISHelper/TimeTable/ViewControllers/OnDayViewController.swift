@@ -10,10 +10,12 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        view.backgroundColor = .white
         setUpTableView()
         onDayTable.backgroundColor = .white
-        onDayTable.separatorStyle = .none
+        onDayTable.separatorStyle = .singleLine
+        onDayTable.separatorColor = .darkGray
         
         onDayTable.dataSource = self
         onDayTable.delegate = self
@@ -26,12 +28,13 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
     func setUpTableView() {
         newView = UIView(frame: CGRect(x: 0, y: 440, width: view.frame.width, height: 800))
         newView.backgroundColor = view.backgroundColor
-        newView.layer.cornerRadius = 25
+        newView.layer.cornerRadius = 50
         view = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         view.addSubview(newView)
         newView.addSubview(onDayTable)
         
-        onDayTable.layer.cornerRadius = 10
+        
+        onDayTable.layer.cornerRadius = 50
         onDayTable.translatesAutoresizingMaskIntoConstraints = false
         onDayTable.leadingAnchor.constraint(equalTo: newView.leadingAnchor, constant: 0).isActive = true
         onDayTable.trailingAnchor.constraint(equalTo: newView.trailingAnchor, constant: 0).isActive = true
@@ -65,7 +68,7 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
         label.textAlignment = .center
         label.numberOfLines = 0
         label.text = "Пятница"
-        label.textColor = .systemCyan
+        label.textColor = .gray
         label.font = UIFont.boldSystemFont(ofSize: 30)
         
         returnedView.addSubview(label)
@@ -76,7 +79,7 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: onDayID) as! OnDayTableViewCell
         
-        cell.backgroundColor = .systemCyan
+        cell.backgroundColor = .tertiaryLabel
     
         let someDay = modelTimeTable.arrayFriday[indexPath.row]
         
@@ -85,10 +88,10 @@ class OnDayViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.labelSubject.text = someDay.subject
         cell.labelTeacher.text = someDay.teacher
         
-        cell.labelTime.textColor = .white
-        cell.labelRoom.textColor = .white
-        cell.labelSubject.textColor = .white
-        cell.labelTeacher.textColor = .white
+        cell.labelTime.textColor = .darkGray
+        cell.labelRoom.textColor = .darkGray
+        cell.labelSubject.textColor = .darkGray
+        cell.labelTeacher.textColor = .darkGray
         
         return cell
     }
