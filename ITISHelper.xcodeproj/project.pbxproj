@@ -39,6 +39,7 @@
 		439C5E2128777CD700E9A8CD /* OnDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E2028777CD700E9A8CD /* OnDayViewController.swift */; };
 		439C5E2328777D4000E9A8CD /* OnWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */; };
 		43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2C7F028758E34003FED52 /* TabBarViewController.swift */; };
+		92A7929A287CCA4900A44DC9 /* VkParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A79299287CCA4900A44DC9 /* VkParsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		439C5E2028777CD700E9A8CD /* OnDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDayViewController.swift; sourceTree = "<group>"; };
 		439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnWeekViewController.swift; sourceTree = "<group>"; };
 		43E2C7F028758E34003FED52 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		92A79299287CCA4900A44DC9 /* VkParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VkParsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 		438EE4A5287A1FBA00F5C178 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				92A79298287CCA4900A44DC9 /* VkParsnig */,
 				432D0759287B280C00A5C898 /* ViewControllers */,
 				432D075A287B281F00A5C898 /* Cells */,
 				432D075B287B2B9B00A5C898 /* Sources */,
@@ -303,6 +306,14 @@
 				438EE4B0287A2F9100F5C178 /* ModelTimeTable.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		92A79298287CCA4900A44DC9 /* VkParsnig */ = {
+			isa = PBXGroup;
+			children = (
+				92A79299287CCA4900A44DC9 /* VkParsing.swift */,
+			);
+			path = VkParsnig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +396,7 @@
 				436ADC032874B8D700D90062 /* StudyViewController.swift in Sources */,
 				436ADC052874B90500D90062 /* ActivitiesViewController.swift in Sources */,
 				432D076F287B3BD100A5C898 /* ModelRating.swift in Sources */,
+				92A7929A287CCA4900A44DC9 /* VkParsing.swift in Sources */,
 				432D073C287ACE0500A5C898 /* MySubjects.swift in Sources */,
 				436ADBFF2874B80D00D90062 /* AuthorizationViewController.swift in Sources */,
 				438EE49F287A181600F5C178 /* OnDayTableViewCell.swift in Sources */,
