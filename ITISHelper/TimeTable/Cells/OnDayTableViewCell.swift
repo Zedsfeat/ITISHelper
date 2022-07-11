@@ -1,10 +1,3 @@
-//
-//  OnDayTableViewCell.swift
-//  ITISHelper
-//
-//  Created by zedsbook on 09.07.2022.
-//
-
 import UIKit
 
 class OnDayTableViewCell: UITableViewCell {

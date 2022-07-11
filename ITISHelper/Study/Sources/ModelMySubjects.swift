@@ -6,11 +6,11 @@ class ModelMySubjects {
     var arrayOfSubjects = [MySubjects]()
     
     func setUpSubjects() {
-        let discreteMathematics = MySubjects(name: "Дискретка")
-        let mathematicalAnalysis = MySubjects(name: "Матан")
-        let informaticsAndProgramming = MySubjects(name: "Инфа")
-        let algorithmsAndDataStructures = MySubjects(name: "АиСД")
-        let algebraAndGeometry = MySubjects(name: "Алгем")
+        let discreteMathematics = MySubjects(name: "Дискретная математика")
+        let mathematicalAnalysis = MySubjects(name: "Математический анализ")
+        let informaticsAndProgramming = MySubjects(name: "Информатика и программирование")
+        let algorithmsAndDataStructures = MySubjects(name: "Алгоритмы и структуры данных")
+        let algebraAndGeometry = MySubjects(name: "Алгебра и геометрия")
         
         arrayOfSubjects.append(discreteMathematics)
         arrayOfSubjects.append(mathematicalAnalysis)

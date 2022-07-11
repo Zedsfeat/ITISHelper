@@ -15,7 +15,6 @@ class AuthorizationViewController: UIViewController {
         self.view.backgroundColor = .gray
         
         imageAuthorization.layer.cornerRadius = 50
-  
         
         setUpTextField()
         setUpButton()
@@ -25,17 +24,19 @@ class AuthorizationViewController: UIViewController {
         textFieldAuthorization = UITextField()
         view.addSubview(textFieldAuthorization)
         
+        textFieldAuthorization.adjustsFontSizeToFitWidth = true
+        
         textFieldAuthorization.translatesAutoresizingMaskIntoConstraints = false
         textFieldAuthorization.topAnchor.constraint(equalTo: view.topAnchor, constant: 370).isActive = true
         textFieldAuthorization.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 45).isActive = true
         textFieldAuthorization.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -45).isActive = true
-        textFieldAuthorization.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        textFieldAuthorization.heightAnchor.constraint(equalToConstant: 55).isActive = true
         
-        textFieldAuthorization.font = UIFont.systemFont(ofSize: 49)
+        textFieldAuthorization.font = UIFont.systemFont(ofSize: 50)
         textFieldAuthorization.layer.borderWidth = 2
         textFieldAuthorization.layer.cornerRadius = 22
         textFieldAuthorization.layer.borderColor = UIColor.gray.cgColor
-        textFieldAuthorization.placeholder = " Введите ФИО"
+        textFieldAuthorization.placeholder = "  Введите ФИО"
         
         
         textFieldAuthorization.textColor = .gray

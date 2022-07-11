@@ -38,6 +38,7 @@
 		438EE4B3287A2FB800F5C178 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EE4B2287A2FB800F5C178 /* TimeTable.swift */; };
 		439C5E2128777CD700E9A8CD /* OnDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E2028777CD700E9A8CD /* OnDayViewController.swift */; };
 		439C5E2328777D4000E9A8CD /* OnWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */; };
+		43BA3625287CCEB000300002 /* vkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA3624287CCEB000300002 /* vkParser.swift */; };
 		43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2C7F028758E34003FED52 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		438EE4B2287A2FB800F5C178 /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		439C5E2028777CD700E9A8CD /* OnDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDayViewController.swift; sourceTree = "<group>"; };
 		439C5E2228777D4000E9A8CD /* OnWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnWeekViewController.swift; sourceTree = "<group>"; };
+		43BA3624287CCEB000300002 /* vkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vkParser.swift; sourceTree = "<group>"; };
 		43E2C7F028758E34003FED52 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,20 +200,12 @@
 				438EE4A5287A1FBA00F5C178 /* Activities */,
 				438EE4A6287A1FD100F5C178 /* Help */,
 				438EE4A7287A1FE000F5C178 /* Settings */,
-				438EE4A1287A1F5300F5C178 /* Sources */,
 				436ADBEA2874B7CE00D90062 /* AppDelegate.swift */,
 				436ADBEC2874B7CE00D90062 /* SceneDelegate.swift */,
 				436ADBF82874B7CF00D90062 /* Info.plist */,
 				436ADBF52874B7CF00D90062 /* LaunchScreen.storyboard */,
 			);
 			path = ITISHelper;
-			sourceTree = "<group>";
-		};
-		438EE4A1287A1F5300F5C178 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		438EE4A2287A1F6F00F5C178 /* Authorization */ = {
@@ -245,6 +239,7 @@
 		438EE4A5287A1FBA00F5C178 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				43BA3621287CCE5300300002 /* VKParser */,
 				432D0759287B280C00A5C898 /* ViewControllers */,
 				432D075A287B281F00A5C898 /* Cells */,
 				432D075B287B2B9B00A5C898 /* Sources */,
@@ -303,6 +298,14 @@
 				438EE4B0287A2F9100F5C178 /* ModelTimeTable.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		43BA3621287CCE5300300002 /* VKParser */ = {
+			isa = PBXGroup;
+			children = (
+				43BA3624287CCEB000300002 /* vkParser.swift */,
+			);
+			path = VKParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +392,7 @@
 				436ADBFF2874B80D00D90062 /* AuthorizationViewController.swift in Sources */,
 				438EE49F287A181600F5C178 /* OnDayTableViewCell.swift in Sources */,
 				432D0749287AF4F300A5C898 /* ModelHelp.swift in Sources */,
+				43BA3625287CCEB000300002 /* vkParser.swift in Sources */,
 				432D076D287B3BB300A5C898 /* Rating.swift in Sources */,
 				439C5E2128777CD700E9A8CD /* OnDayViewController.swift in Sources */,
 				43E2C7F128758E34003FED52 /* TabBarViewController.swift in Sources */,

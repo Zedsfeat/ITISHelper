@@ -66,7 +66,7 @@ class MySubjectsViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.labelName.text = someSubject.name
         cell.labelName.textColor = .darkGray
-        cell.labelName.font = UIFont.boldSystemFont(ofSize: 27)
+        cell.labelName.font = UIFont.systemFont(ofSize: 20)
         
         
         return cell
